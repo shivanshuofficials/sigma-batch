@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS media query</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        a {
+            text-decoration: none;
+            margin: 5px;
+            color: white;
+        }
+
+        nav {
+            background-color: grey;
+            padding: 20px;
+        }
+
+        .box {
+            width: 19vw;
+            background-color: black;
+            height: 20vh;
+            margin: 5px;
+
+
+        }
+
+        .boxes {
+            display: flex;
+        }
+
+        @media only screen and (max-width: 455px) {
+
+            nav {
+
+                color: white;
+                background-color: black;
+                width: 100%;
+            }
+
+            .boxes {
+                flex-direction: column;
+            }
+
+            .box {
+                width: 105%;
+                background-color: grey;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="">Element</a>
+        <a href="">Element</a>
+        <a href="">Element</a>
+    </nav>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

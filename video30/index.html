@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variables</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color:white;
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            display: flex;
+            border: 2px solid black;
+        }
+        
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            padding: 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="">home</a>
+        <a href="">about</a>
+        <a href="">contact</a>
+    </nav>
+</body>
+
+</html>

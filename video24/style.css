@@ -1,0 +1,8 @@
+.box{
+    border: 2px solid black;
+    padding: 34px;
+    text-shadow: 4px 3px 5px red;
+   outline: 5px solid red;
+    box-shadow:5px 5px   15px 5px green;
+    border-radius: 5px;
+   }
