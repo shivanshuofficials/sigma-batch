@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css float and clear</title>
+    <style>
+        img {
+            float:left;
+        }
+    .cards{
+        border: 2px solid black;
+        display: flow-root;
+    }
+    .card{
+        border: 2px solid red;
+    }
+    .card:nth-child(3){
+        background-color: aqua;
+        clear: both;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s" alt=""
+            width="230">
+        <div class="card">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae iusto officiis ducimus ratione
+                facilis! Nihil temporibus illo veniam distinctio inventore ea labore magni. Quod repellat obcaecati sint
+                est enim fugiat asperiores consequuntur odit aliquam?
+            </p>
+        </div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente unde voluptatum eum ipsa voluptates fugiat ratione, quia similique possimus magnam illo perferendis doloribus distinctio minus nihil suscipit aut, eius exercitationem. Incidunt natus a ducimus rerum pariatur ex illum provident suscipit similique accusamus! Voluptatem fugiat libero laborum ducimus. Maxime, mollitia assumenda.</div>
+        <div class="card">card3</div>
+    </div>
+</body>
+
+</html>
